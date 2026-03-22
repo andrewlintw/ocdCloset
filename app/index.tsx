@@ -1,11 +1,11 @@
-import { Text, View, StyleSheet, Pressable } from "react-native";
-import { useRouter } from "expo-router";
-import { Href } from "expo-router";
+import { Href, useRouter } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const pages: {id: string; route: Href; label: string}[] = [
   {id: "add", route: "/add", label: "加衣服"}, 
   {id: "delete", route: "/delete", label: "收衣服"}, 
   {id: "recommend", route: "/recommend", label: "推薦衣服"},
+  {id: "check-weather", route: "/check-weather", label: "查看天氣"}
 ];
 
 export default function Index() {
